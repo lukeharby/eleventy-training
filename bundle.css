@@ -6,3 +6,32 @@ body {
 a {
     color: #444444;
 }
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.post {
+    background-color: #f0f0f0;
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-bottom: 1rem;
+}
+
+@media screen and (min-width: 740px) {
+    main {
+        gap: 1rem;
+    }
+    .post {
+        flex: 0 0 calc(25% - 1rem);
+        max-width: calc(25% - 1rem);
+
+    }
+}
